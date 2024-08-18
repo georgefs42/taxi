@@ -1,0 +1,113 @@
+/* src/css/Hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Pacifico&family=Playwrite+AR:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* General Styles */
+.hero-container {
+    margin: 1% 4%;
+    display: flex;
+    flex-direction: row; /* Default to side-by-side layout */
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    padding: 0 5%; /* Adjust padding to better fit the container */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    border-radius: 15px; /* Adjust this value as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow for a more pronounced effect */
+}
+
+.map-container {
+    margin-top: 6%;
+    flex: 1; /* Allow map to take up remaining space */
+    background-color: #e5e5e5; /* Optional: Add background color for map area */
+    position: relative;
+    height: 75%; /* Full height to match the container */
+}
+
+.booking-container {
+    margin-top: 2%;
+    flex: 0 0 400px; /* Fixed width for the calculator form */
+    max-width: 100%; /* Ensure form does not overflow on smaller screens */
+    padding: 20px;
+    overflow-y: auto; /* Add scroll if content overflows */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.motto {
+    margin-top: 1%;
+    font-family: "Pacifico", cursive;
+    font-weight: 700; /* Set to 700 for bold, or adjust as needed */
+    font-style: normal;
+    text-align: center; /* Center-align the text */
+    font-size: 1.7em;
+}
+
+label {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.address-details {
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 0 2%; /* Adjust padding for smaller screens */
+    }
+    .booking-container {
+        border-left: none; /* Remove left border */
+        border-bottom: 2px solid #ddd; /* Add bottom border to separate from map */
+        border-top: 2px solid #ddd; /* Add top border for separation on smaller screens */
+    }
+    .map-container {
+        height: 400px; /* Set a fixed height for the map on smaller screens */
+    }
+}

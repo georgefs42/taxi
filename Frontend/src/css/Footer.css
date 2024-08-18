@@ -1,0 +1,60 @@
+/* Footer.css */
+.footer {
+    margin: 0 4% 5%;
+    background-color:rgb(245, 235, 218);  
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.5s;
+  }
+  
+  .footer-links a:hover {
+    color: blueviolet;
+    font-size: 1.2rem;
+    text-decoration: underline;
+  }
+  
+  .footer-social a {
+    color: black;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s;
+    
+  }
+  
+  .footer-social a:hover {
+    color: blueviolet;
+  }
+  
+  .footer-social svg {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+  .footer-contact a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  

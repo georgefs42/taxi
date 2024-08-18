@@ -1,0 +1,95 @@
+/* Basic styling for the header */
+.header {
+    margin: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color:rgb(245, 235, 218);
+    color: black;
+    border-radius: 15px; /* Adjust this value as needed */
+  /* Optional: Add a box shadow for a more pronounced effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .logo {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 3%;
+    font-size: 1.5rem;
+  }
+  
+  /* Style for the highlighted text */
+  .highlight {
+    background-color: orange; /* Change this color to your preference */
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+  }
+  
+  /* Navigation styling */
+  .nav {
+    
+    padding-right: 5%;    
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li { 
+    margin-left: 1rem;
+  }
+  
+  .nav-list a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: 0.5s;
+  }
+
+  .nav-list a:hover{
+    color: blueviolet;
+    font-size: 1.5rem;
+
+  }
+  
+  /* Menu icon styling */
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 750px) {
+    .nav-list {
+      display: none; /* Hide menu items by default */
+      flex-direction: column;
+      position: absolute;
+      top: 4rem;
+      right: 1rem;
+      background-color: rgba(245, 235, 218, 0.592);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .nav-list.open {
+      display: flex; /* Show menu items when open */
+    }
+  
+    .nav-list li {
+      margin: 0.5rem 0;
+    }
+  
+    .menu-icon {
+      display: block; /* Show menu icon on small screens */
+    }
+  }
+  
